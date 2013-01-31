@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ipin.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <user-permission android:name="android.permission.RESTART_PACKAGES" />
+
+    <application
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:name="com.ipin.application.IpinApplication" >
+        <uses-library android:name="com.google.android.maps" />
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:name=".Login" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 未登录前页面 -->
+        <!--
+			<activity android:name="Login"
+			android:configChanges="orientation|keyboardHidden"></activity>
+        -->
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="Regist" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="Introduce" >
+        </activity>
+        <!-- 登录后页面 -->
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="UserLocation" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="UserFeedBack" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="UserPublishSCI" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="Index" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="Travel" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="CallTaxi" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="LentCar" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="CarFans" >
+        </activity>
+
+        <service
+            android:exported="true"
+            android:name=".IpinService"
+            android:process=":remote" >
+        </service>
+
+        <receiver android:name=".IpinReceiver" >
+            <intent-filter >
+                <action android:name="IPIN_USER_INFO_ID" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/index_tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ScrollView
+                android:id="@+id/index_index"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/index_index_appcontain_imgview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-150px"
+                        android:layout_marginTop="100px"
+                        android:src="@drawable/tire" >
+                    </ImageView>
+
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/index_index_appcontain_showlocal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="210px"
+                        android:layout_marginTop="110px"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:src="@drawable/index_index_showlocal" >
+                        </ImageView>
+
+                        <TextView
+                            style="@style/softwarefontcolor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="显示我的位置" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/index_index_appcontain_sentshareinfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="210px"
+                        android:layout_marginTop="210px"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:src="@drawable/index_index_scinfo" >
+                        </ImageView>
+
+                        <TextView
+                            style="@style/softwarefontcolor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发布拼车消息" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/index_index_appcontain_problem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="223px"
+                        android:layout_marginTop="310px"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:src="@drawable/index_index_qafeedback" >
+                        </ImageView>
+
+                        <TextView
+                            style="@style/softwarefontcolor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="问题反馈" >
+                        </TextView>
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+
+            <ListView
+                android:id="@+id/index_sharecarinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#FFFFFF"
+                android:drawSelectorOnTop="true"
+                android:fadingEdge="none"
+                android:scrollbars="vertical"
+                android:scrollingCache="false" >
+            </ListView>
+
+            <ListView
+                android:id="@+id/index_sharecartips"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#FFFFFF"
+                android:drawSelectorOnTop="true"
+                android:fadingEdge="none"
+                android:scrollbars="vertical"
+                android:scrollingCache="false" >
+            </ListView>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

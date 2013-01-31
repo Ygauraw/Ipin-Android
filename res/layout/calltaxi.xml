@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/calltaxi_tabhost" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/background">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TabWidget android:id="@android:id/tabs"
+			android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		</TabWidget>
+		<FrameLayout android:id="@android:id/tabcontent"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<LinearLayout android:id="@+id/calltaxi_trad"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:scrollbars="vertical">
+				<TextView android:id="@+id/calltaxi_trad_text"
+					android:layout_width="fill_parent" android:layout_height="fill_parent">
+				</TextView>
+			</LinearLayout>
+			<ScrollView android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:scrollbars="vertical"
+				android:id="@+id/caltaxi_urgentcalltext">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:orientation="vertical">
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:orientation="vertical">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="时间"
+							style="@style/softwarefontcolor">
+						</TextView>
+						<EditText android:id="@+id/caltaxi_urgentcalltext_time"
+							android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:singleLine="true" android:maxLength="16">
+						</EditText>
+					</LinearLayout>
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:orientation="vertical">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="地点"
+							style="@style/softwarefontcolor">
+						</TextView>
+						<EditText android:id="@+id/caltaxi_urgentcalltext_address"
+							android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:maxLength="100">
+						</EditText>
+					</LinearLayout>
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:orientation="horizontal" android:gravity="center"
+						android:layout_gravity="center_horizontal">
+						<Button android:text="重置" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/caltaxi_urgentcalltext_reset"/>
+						<Button android:text="提交" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/caltaxi_urgentcalltext_confirm"/>
+					</LinearLayout>
+				</LinearLayout>
+			</ScrollView>
+			<ScrollView android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:scrollbars="vertical"
+				android:id="@+id/caltaxi_booktaxi">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:orientation="vertical">
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:orientation="vertical">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="目的地"
+							style="@style/softwarefontcolor">
+						</TextView>
+						<EditText android:id="@+id/caltaxi_booktaxi_destination"
+							android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:maxLength="100">
+						</EditText>
+					</LinearLayout>
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:orientation="vertical">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="出发地"
+							style="@style/softwarefontcolor">
+						</TextView>
+						<EditText android:id="@+id/caltaxi_booktaxi_departtrue"
+							android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:maxLength="100">
+						</EditText>
+					</LinearLayout>
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:orientation="vertical">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="预约时间"
+							style="@style/softwarefontcolor">
+						</TextView>
+						<EditText android:id="@+id/caltaxi_booktaxi_time"
+							android:layout_height="wrap_content" android:layout_width="fill_parent"
+							android:singleLine="true" android:maxLength="16">
+						</EditText>
+					</LinearLayout>
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:orientation="vertical">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="备注"
+							style="@style/softwarefontcolor">
+						</TextView>
+						<EditText android:id="@+id/caltaxi_booktaxi_description"
+							android:layout_height="wrap_content" android:layout_width="fill_parent"
+							android:maxLength="100">
+						</EditText>
+					</LinearLayout>
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:orientation="horizontal" android:gravity="center"
+						android:layout_gravity="center_horizontal">
+						<Button android:text="重置" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/caltaxi_booktaxi_reset"/>
+						<Button android:text="提交" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/caltaxi_booktaxi_confirm"/>
+					</LinearLayout>
+				</LinearLayout>
+			</ScrollView>
+		</FrameLayout>
+	</LinearLayout>
+</TabHost>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/regist_tabhost" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/background"
+	style="@style/softwarefontcolor">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+		<TabWidget android:id="@android:id/tabs"
+			android:orientation="horizontal" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		</TabWidget>
+		<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@android:id/tabcontent" android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/regist_contract" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:orientation="vertical">
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="免责声明"
+						style="@style/softwarefontcolor" android:gravity="center"
+						android:layout_gravity="center_horizontal" android:textSize="17sp" />
+					<TextView android:id="@+id/regist_contract_contain"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						style="@style/softwarefontcolor" android:text="@string/contract" />
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="fill_parent" android:layout_height="fill_parent"
+						android:orientation="horizontal" android:gravity="center"
+						android:layout_gravity="center_horizontal">
+						<CheckBox android:id="@+id/regist_contract_agree" style="@style/softwarefontcolor"
+							android:text="同意" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" />
+						<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+							android:layout_width="100px" android:layout_height="wrap_content" />
+						<CheckBox android:id="@+id/regist_contract_rejest" style="@style/softwarefontcolor"
+							android:text="拒绝" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" />
+					</LinearLayout>
+				</LinearLayout>
+			</ScrollView>
+			<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/regist_info" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:orientation="vertical" style="@style/softwarefontcolor">
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="用户账号*"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<EditText android:id="@+id/regist_info_useraccount"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:singleLine="true" android:maxLength="16">
+					</EditText>
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="用户密码*"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<EditText android:id="@+id/regist_info_userpassword1"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:singleLine="true" android:maxLength="16" android:password="true">
+					</EditText>
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="确认密码*"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<EditText android:id="@+id/regist_info_userpassword2"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:singleLine="true" android:maxLength="16" android:password="true">
+					</EditText>
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="真实姓名"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<EditText android:id="@+id/regist_info_trueusername"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:singleLine="true" android:maxLength="16">
+					</EditText>
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="电话号码*"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<EditText android:id="@+id/regist_info_usertel"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:singleLine="true" android:maxLength="16">
+					</EditText>
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="用户昵称"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<EditText android:id="@+id/regist_info_usernickname"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:singleLine="true" android:maxLength="16">
+					</EditText>
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="用户邮箱"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<EditText android:id="@+id/regist_info_useremail"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:singleLine="true" android:maxLength="16">
+					</EditText>
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="(注：星号为必填内容)"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:orientation="horizontal">
+						<Button android:id="@+id/regist_info_reset" android:text="重置"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_alignParentLeft="true" />
+						<Button android:id="@+id/regist_info_ok" android:text="确定"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_alignParentRight="true" />
+					</RelativeLayout>
+				</LinearLayout>
+			</ScrollView>
+			<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/regist_confirm" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:orientation="vertical">
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="用户账号"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<TextView android:layout_width="fill_parent"
+						android:id="@+id/regist_confirm_useaccount" android:layout_height="wrap_content"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="用户密码"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<TextView android:layout_width="fill_parent"
+						android:id="@+id/regist_confirm_password" android:layout_height="wrap_content"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="真实姓名"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:id="@+id/regist_confirm_truename"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="电话号码"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:id="@+id/regist_confirm_tel"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="用户昵称"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:id="@+id/regist_confirm_nickname"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="用户邮箱"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:id="@+id/regist_confirm_email"
+						style="@style/softwarefontcolor">
+					</TextView>
+					<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:orientation="horizontal">
+						<Button android:id="@+id/regist_confirm_reset"
+							android:text="重置" android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentLeft="true" />
+						<Button android:id="@+id/regist_confirm_submit"
+							android:text="提交" android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentRight="true" />
+					</RelativeLayout>
+				</LinearLayout>
+			</ScrollView>
+		</FrameLayout>
+	</LinearLayout>
+</TabHost>

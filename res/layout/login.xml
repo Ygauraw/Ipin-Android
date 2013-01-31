@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/loginmain"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/background" android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="32px" xmlns:android="http://schemas.android.com/apk/res/android">
+	</LinearLayout>
+	<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="260px" android:layout_height="200px"
+		android:background="@drawable/loginboxes" android:gravity="center"
+		android:layout_gravity="center_horizontal">
+		<EditText android:id="@+id/username" android:layout_width="150px"
+			android:layout_height="wrap_content" android:textSize="12sp"
+			android:singleLine="true" android:maxLength="16" android:layout_x="73px"
+			android:layout_y="52px">
+		</EditText>
+		<EditText android:id="@+id/password" android:layout_width="150px"
+			android:layout_height="wrap_content" android:textSize="10sp"
+			android:password="true" android:singleLine="true" android:maxLength="16"
+			android:layout_x="73px" android:layout_y="87px">
+		</EditText>
+		<ImageButton android:id="@+id/rememberaccount"
+			android:layout_width="15px" android:layout_height="15px"
+			android:layout_x="20px" android:layout_y="115px"
+			android:background="@drawable/orgrememberaccount" />
+		<ImageButton android:id="@+id/login"
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="90px" android:layout_height="30px"
+			android:background="@drawable/loginbutton1" android:layout_x="80px"
+			android:layout_y="150px">
+		</ImageButton>
+		<LinearLayout android:id="@+id/login_guess_login"
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="100px" android:layout_height="50px"
+			android:layout_x="145px" android:layout_y="115px" >
+		</LinearLayout>
+	</AbsoluteLayout>
+	<AbsoluteLayout android:layout_width="fill_parent"
+		android:id="@+id/padding" android:layout_height="150px"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+	</AbsoluteLayout>
+	<LinearLayout android:id="@+id/loginmenubar"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="bottom">
+	</LinearLayout>
+</LinearLayout>

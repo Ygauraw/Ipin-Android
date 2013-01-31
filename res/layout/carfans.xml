@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/carfans_tabhost" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/background">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+		<LinearLayout android:id="@+id/carfans_userinfo"
+			android:layout_height="wrap_content" android:layout_width="fill_parent">
+			<ImageView android:id="@+id/carfans_userimg"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:src="@drawable/userb" />
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:orientation="vertical">
+				<TextView android:id="@+id/carfans_username"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:text="小明" style="@style/softwarefontcolor" />
+				<TextView android:id="@+id/carfans_usersign"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:text="小明上广州" style="@style/softwarefontcolor" />
+			</LinearLayout>
+		</LinearLayout>
+		<TabWidget android:id="@android:id/tabs"
+			android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		</TabWidget>
+		<FrameLayout android:id="@android:id/tabcontent"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<ListView android:id="@+id/carfans_recentcarfans"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_alignParentBottom="true" android:cacheColorHint="#FFFFFF"
+				android:scrollingCache="false" android:fadingEdge="none">
+			</ListView>
+			<ListView android:id="@+id/carfans_carfans"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:scrollbars="vertical" android:cacheColorHint="#FFFFFF"
+				android:scrollingCache="false" android:fadingEdge="none">
+			</ListView>
+			<ListView android:id="@+id/carfans_cargroups"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:scrollbars="vertical" android:cacheColorHint="#FFFFFF"
+				android:scrollingCache="false" android:fadingEdge="none">
+			</ListView>
+			<AbsoluteLayout android:id="@+id/carfans_sharecarinfo"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				xmlns:android="http://schemas.android.com/apk/res/android">
+			</AbsoluteLayout>
+		</FrameLayout>
+	</LinearLayout>
+</TabHost>
